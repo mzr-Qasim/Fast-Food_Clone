@@ -277,7 +277,6 @@ body{
 .Card:hover .overlay{
     background-color: var(--card-transparent-2);
     transition: all .5s;
-
 }
 
 
@@ -298,15 +297,16 @@ body{
 }
 .Card:hover .overlay-hover .overlay-hover-text {
     opacity: 1;
-    transition: all 1s;
+    transition: all 0.s;
+
 }
 
 .Card .overlay-hover .rect{
+    position: absolute;
     width: 140px;
     height: 140px;
     border: 2px solid #fff;
     rotate: 45deg;
-    position: absolute;
     top: 65%;
     left: 25%;
     transform: translate(-50%, -50%);
@@ -315,10 +315,14 @@ body{
 
 }
 
-.Card:hover .overlay-hover .rect{
+.Card:hover .rect{
     scale: 1;
-    transition: ease-out .2s;
+}
 
+
+.Card:hover .overlay-hover{
+    opacity: 1;
+    transition: ease-out .2s;
 }
 
 
@@ -518,20 +522,22 @@ body{
     flex: 1;
     text-align: center;
 
+}
 
-
+.menu-item:nth-child(1){
+    flex: 1.5;
 
 }
 
 
 
 .menu-item:nth-child(2){
-    flex: 3;
+    flex: 4;
 
 }
 
 .menu-item:nth-child(3){
-    flex: 1;
+    flex: 1.5;
 }
 
 
@@ -816,3 +822,7 @@ a.map-section-separation h2:hover{
 
 }
  
+
+
+
+
